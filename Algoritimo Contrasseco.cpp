@@ -1,5 +1,5 @@
 int Sensor = 13; //sensor no pino 13
-int Motor = 8;   //motor no pino 3
+int Motor = 8;   //motor no pino 8
 int Nosafer = 5; //Luz Nosafer
 int Setup = 6;   //Luz Setup
 int Safer = 7;  //Luz Safer
@@ -47,42 +47,42 @@ void loop(){
             digitalWrite(Safer,LOW);
             digitalWrite(Setup,LOW);
 
-          // TENTATIVA 1
+        // TENTATIVA 1
             if ( (Estado == 1) && (digitalRead(Sensor) == 1) ) { 
                 digitalWrite(luz1,HIGH);
                 delay (10000);
                 digitalWrite(Motor,HIGH);
                 delay (5000); }
           
-          // TENTATIVA 2
+        // TENTATIVA 2
             else if ( (Estado == 2) && (digitalRead(Sensor) == 1) ) { 
                 digitalWrite(luz2,HIGH);
                 delay (3000);
                 digitalWrite(Motor,HIGH);
                 delay (5000); }
           
-          // TENTATIVA 3
+        // TENTATIVA 3
             else if ( (Estado == 3) && (digitalRead(Sensor) == 1) ) { 
                 digitalWrite(luz3,HIGH);
                 delay (10000);
                 digitalWrite(Motor,HIGH);
                 delay (5000); }
           
-          // TENTATIVA 4
+        // TENTATIVA 4
             else if ( (Estado == 4) && (digitalRead(Sensor) == 1) ) { 
                 digitalWrite(luz4,HIGH);
                 delay (10000);
                 digitalWrite(Motor,HIGH);
                 delay (5000); }
           
-			    // TENTATIVA 5
+	// TENTATIVA 5
             else if ( (Estado == 5) && (digitalRead(Sensor) == 1) ) { 
                 digitalWrite(luz5,HIGH);
                 delay (5000);
                 digitalWrite(Motor,HIGH);
                 delay (12000); }
           
-			// Luz Setup 
+	// Luz Setup 
             else if ( (Estado > 5) && (digitalRead(Sensor) == 1) ){
                 digitalWrite(Motor,LOW);
                 digitalWrite(Nosafer,LOW);
