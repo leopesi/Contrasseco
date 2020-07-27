@@ -8,7 +8,7 @@ Com um fluxostato instalado no recalque da motobomba é possível indentificar q
 
 <hr>
 
-### Circuito de teste para simulação do circuito no tinkercad..
+### Circuito de teste para simulação no tinkercad..
 
 ![Arduino](https://user-images.githubusercontent.com/52714788/78721167-6385e600-78fd-11ea-96a7-07ee9a4d95c6.jpg)
 
